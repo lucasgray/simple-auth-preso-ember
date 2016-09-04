@@ -1,0 +1,10 @@
+<h1>Portal for <></h1>
+
+<ul>
+  {{#each model as |teammate|}}
+    <li>
+      <strong>{{teammate.name}}</strong> | <strong>{{teammate.specialty}}</strong>
+    </li>
+  {{/each}}
+</ul>
+
