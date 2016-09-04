@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'secretcodez',
+    modulePrefix: 'simple-auth-preso-ember',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
