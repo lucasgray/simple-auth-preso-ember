@@ -14,6 +14,15 @@ export default Ember.Component.extend({
         console.log('fail', err);
         this.sendAction('authenticationFailure');
       });
+    },
+    authenticateGoogle() {
+      this.get('session').authenticate('authenticator:torii', 'google-oauth2').then(() => {
+        //do whatever you want here
+        this.sendAction('authenticationSuccess');
+      }, (err) => {
+        console.log('fail', err);
+        this.sendAction('authenticationFailure');
+      });
     }
   }
 
